@@ -66,4 +66,5 @@ function totalPrice() {
         const discountprice = total - total * 0.2;
         document.getElementById('total').innerText = discountprice;
     }
+    
  });

@@ -21,53 +21,63 @@
                 <!-- memory -->
                 <div class="my-8">
                     <h4 class="text-1xl font-bold mb-2">Memory</h4>
-                    <button id="memory-8GB" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300">
+                    <button id="memory-8GB" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 hover:bg-black hover:text-white">
                         8GB unified memory
                     </button>
-                    <button id="memory-16GB" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300">
+                    <button id="memory-16GB" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 hover:bg-black hover:text-white">
                         16GB unified memory
                     </button>
                 </div>
                 <!-- storage -->
                 <div class="my-8">
                     <h4 class="text-1xl font-bold mb-2">Storage</h4>
-                    <button id="storage-256GB" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300">
+                    <button id="storage-256GB" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 hover:bg-black hover:text-white">
                         256GB SSD storage
                     </button>
-                    <button id="storage-512GB"  class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300">
+                    <button id="storage-512GB"  class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 hover:bg-black hover:text-white">
                         512GB SSD storage
                     </button>
-                    <button id="storage-1TB"  class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 mt-2">
+                    <button id="storage-1TB"  class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 mt-2 hover:bg-black hover:text-white">
                         1TB SSD storage
                     </button>
                 </div>
                 <!-- delivery option -->
                 <div class="my-8">
                     <h4 class="text-1xl font-bold mb-2">Choose your delivery option</h4>
-                    <button id="free-shipping" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 mb-2">
+                    <button id="free-shipping" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 mb-2 hover:bg-black hover:text-white">
                     Friday, Aug 25 FREE Prime Delivery
                     </button>
-                    <button id="charged-shipping" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300">
+                    <button id="charged-shipping" class="border-2 rounded px-4 py-2 text-gray-600 border-gray-300 hover:bg-black hover:text-white ">
                     Friday, Aug 21 Delivery charge $20
                     </button>
                 </div>
                 <!-- receipt -->
-                <div class="grid grid-cols-2 gap-0 text-1xl font-bold mb-4">              
-                    <div class="">
-                      <h4 class="border-b-2 py-2">Best Price</h4>
-                      <h4 class="border-b-2 py-2">Extra Memory Cost</h4>
-                      <h4 class="border-b-2 py-2">Extra Storage Cost</h4>
-                      <h4 class="border-b-2 py-2 border-gray-800">Delivery charge</h4>
-                      <h4 class="py-2">Total Price</h4>
-                    </div>
-                    <div>
-                      <h4 class="py-2">$<span id="product-cost">1299</span></h4>
-                      <h4 class="py-2">$<span id="memory-cost">0</span></h4>
-                      <h4 class="py-2">$<span id="storage-cost">0</span></h4>
-                      <h4 class="py-2">$<span id="delivery-cost">0</span></h4>
-                      <h4 class="py-2">$<span id="total-price">1299</span></h4>
-                    </div>
-                </div> 
+                
+                <table class="table-auto my-8">
+                    <tbody class="text-1xl font-bold">
+                      <tr class="border-b-2 py-4">
+                        <td class="text-1xl font-bold pr-32">Best Price</td>
+                        <td>$<span id="product-cost">1299</span></td>
+                      </tr>
+                      <tr class="border-b-2 py-4">
+                        <td class="text-1xl font-bold pr-32">Extra Memory Cost</td>
+                        <td>$<span id="memory-cost">0</span></td>
+                      </tr>
+                      <tr class="border-b-2 py-4">
+                        <td class="text-1xl font-bold pr-32">Extra Storage Cost</td>
+                        <td>$<span id="storage-cost">0</span></td>
+                      </tr>
+                      <tr class="border-b-2 border-black py-4">
+                        <td class="text-1xl font-bold pr-32">Delivery charge</td>
+                        <td>$<span id="delivery-cost">0</span></td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-1xl font-bold pr-32">Total Price</td>
+                        <td>$<span id="total-price">1299</span></td>
+                      </tr>
+                      
+                    </tbody>
+                </table>
                 <!-- promo code -->
                 <div>
                     <input id="input-code" class="border border-gray-400 rounded px-4 py-2 " type="text" name="" >
