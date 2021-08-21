@@ -57,17 +57,13 @@ function totalPrice() {
  }
  
  //handle apply button
- function updateTotal(){
-     const total = document.getElementById('total-id');
-     const totalValue = total.value;
-     totalValue = totalPrice();
-
- }
  document.getElementById('apply-confimr').addEventListener('click',function(){
     const inputCode = document.getElementById('input-code');
     const promoCode = inputCode.value;
     if(promoCode == 'stevekaku'){
         inputCode.value = '';
-        updateTotal();
+        let total = document.getElementById('total').innerText;
+        const discountprice = total - total * 0.2;
+        document.getElementById('total').innerText = discountprice;
     }
  });
