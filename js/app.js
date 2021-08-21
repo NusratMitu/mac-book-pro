@@ -45,16 +45,16 @@ function getDeliveryCost(deliveryCost){
 
 //calculate total price
 function totalPrice() {
+   const bestPrice = parseInt(document.getElementById('best-price').innerText);
    const memoryCost = parseInt(document.getElementById('memory-cost').innerText);
    const storageCost = parseInt(document.getElementById('storage-cost').innerText
    );
    const deliveryCost = parseInt(document.getElementById('delivery-cost').innerText
    );
-   const totalPrice = 1299 + memoryCost + storageCost + deliveryCost;
+   const totalPrice = bestPrice + memoryCost + storageCost + deliveryCost;
    document.getElementById('total-price').innerText = totalPrice;
    document.getElementById("total").innerText = totalPrice;
  }
- 
  //handle apply button
  function updateTotal(){
     const  depositTotal = document.getElementById('total');
