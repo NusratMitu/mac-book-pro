@@ -5,7 +5,7 @@ document.getElementById('memory-8GB').addEventListener('click',function(){
 document.getElementById('memory-16GB').addEventListener('click',function(){
    getMemoryCost(180);
   
-});
+}); 
 function getMemoryCost(memoryCost){
    const memoryCostId = document.getElementById('memory-cost');
    memoryCostId.innerText = memoryCost;
@@ -46,17 +46,22 @@ function getDeliveryCost(deliveryCost){
 //calculate total price
 function totalPrice() {
    const memoryCost = parseInt(document.getElementById('memory-cost').innerText);
-   const storageCost = parseInt(
-     document.getElementById('storage-cost').innerText
+   const storageCost = parseInt(document.getElementById('storage-cost').innerText
    );
-   const deliveryCost = parseInt(
-     document.getElementById('delivery-cost').innerText
+   const deliveryCost = parseInt(document.getElementById('delivery-cost').innerText
    );
    const totalPrice = 1299 + memoryCost + storageCost + deliveryCost;
    document.getElementById('total-price').innerText = totalPrice;
+   document.getElementById("total").innerText = totalPrice;
  }
  
  //handle apply button
+ function updateTotal(){
+    const  depositTotal = document.getElementById('total');
+    const depositTotalString = depositTotal.innerText;
+    const currentDepositTotal = parseFloat(depositTotalString);
+    depositTotal.innerText = currentDepositTotal;
+}
  document.getElementById('apply-confimr').addEventListener('click',function(){
     const inputCode = document.getElementById('input-code');
     const promoCode = inputCode.value;
